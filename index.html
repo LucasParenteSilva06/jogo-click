@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <title>Jogo de Clicar em Alvos</title>
+  <style>
+    body {
+      margin: 0;
+      background: rgb(187, 52, 52);
+      overflow: hidden;
+      font-family: Arial;
+      text-align: center;
+    }
+    #botao-jogar {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 24px;
+      padding: 10px 20px;
+      z-index: 1;
+      background-color: #9c89b4;
+      color: rgb(44, 17, 17);
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <button id="botao-jogar">Jogar</button>
+  <div id="phaser-container"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/phaser@3.55.2/dist/phaser.js"></script>
+  <script src="jogo.js"></script>
+</body>
+</html>
